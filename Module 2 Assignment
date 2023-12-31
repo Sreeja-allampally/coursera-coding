@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Page</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>Page Heading</h1>
+  <section class="section">
+    <div class="section-title">Chicken</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </section>
+  <section class="section">
+    <div class="section-title">Beef</div>
+
+    
+<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+  
+</section>
+
+  
+<section
+ 
+class="section">
+    <div class="section-title">Sushi</div>
+    <p>Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+  </section>
+</body>
+</html>
+
+CSS
+body {
+  margin: 0;
+  font-family: sans-serif; /* Optional font-family */
+}
+
+h1 {
+  font-size: 1.75em; /* Optional heading font size */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section {
+  width: 33.33%;
+  float: left;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 10px;
+  background-color: lightblue; /* Adjust colors as needed */
+  border: 1px solid black;
+}
+
+.section-title {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: lightgreen; /* Adjust colors as needed */
+  padding: 5px;
+  border: 1px solid black;
+}
+
+@media (max-width: 991px) {
+  .section {
+    width: 50%;
+  }
+
+  .section:nth-child(3) {
+    width: 100%;
+    clear: both;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    width: 100%;
+  }
+}
